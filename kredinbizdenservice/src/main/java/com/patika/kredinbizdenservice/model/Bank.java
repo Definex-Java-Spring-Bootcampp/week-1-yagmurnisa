@@ -32,6 +32,9 @@ public class Bank {
     public void setLoanList(List<Loan> loanList) {
         this.loanList = loanList;
     }
+    public List<CreditCard> getCardList() {
+    	return creditCards;
+    }
 
     @Override
     public String toString() {

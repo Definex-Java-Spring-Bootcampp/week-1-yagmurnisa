@@ -1,15 +1,16 @@
 package com.patika.kredinbizdenservice.model;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 public class CreditCard implements Product{
-
+// added new constructor
     private BigDecimal fee;
     private List<Campaign> campaignList;
     private Bank bank;
 
-    public CreditCard(BigDecimal fee, List<Campaign> campaignList) {
+    public CreditCard(BigDecimal fee, Bank bank, List<Campaign> campaignList) {
         this.fee = fee;
         this.campaignList = campaignList;
     }

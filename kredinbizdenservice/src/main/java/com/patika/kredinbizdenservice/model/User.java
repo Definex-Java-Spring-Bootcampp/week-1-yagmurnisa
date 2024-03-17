@@ -4,6 +4,7 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class User {
@@ -15,7 +16,7 @@ public class User {
     private String password; //hash fonskiyonlarından biri ile hashlanecek.
     private String phoneNumber;
     private Boolean isActive;
-    private List<Application> applicationList;
+    private List<Application> applicationList = new ArrayList();
 
     public User(String name, String surname, LocalDate birthDate, String email, String password, String phoneNumber, Boolean isActive) {
         this.name = name;
@@ -115,4 +116,12 @@ public class User {
 			}		
 		return hashStr;
 	}
+	
+	@Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", surname=" + surname +
+                '}';
+    }
 }

@@ -16,8 +16,8 @@ public class Main {
 		
 		customers.addAll(Arrays.asList(user1, user2, user3, user4));
 		
-		Product product1 = new Product("television", 20000, "technology", 20);
-		Product product2 = new Product("telephone", 10000, "technology", 80);
+		Product product1 = new Product("television", 15000, "technology", 20);
+		Product product2 = new Product("telephone", 20000, "technology", 80);
 		Product product3 = new Product("picture", 80, "decoration", 20);
 		Product product4 = new Product("vase", 50, "decoration", 30);
 		Product product5 = new Product("shoes", 500, "clothing", 50);
@@ -44,7 +44,7 @@ public class Main {
 		System.out.println("Customers in the system: "+ customerAmount());
 		System.out.println("Total products of customers who are named Cem: "+ productsByCustomer("Cem"));
 		billsOverPrice(1500);
-		System.out.println("Shopping cost for customers who are named Cem and between 25 and 30: " + priceByCustomer("Cem", 25, 30));
+		System.out.println("Shopping cost for customers who are named Cem and between 25 and 30: " + priceByCustomer("gg", 25, 30));
 	}
 
 	public static int customerAmount() {
